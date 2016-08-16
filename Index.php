@@ -14,15 +14,15 @@
 
 		//declaracion de variables "$"
 		$numero = 10;
-
+/*
 		//numero y variable concatenado por "."
 		echo "A el numero es" . $numero;
 
 		//Numero y variable sin concatenar
 		echo "B el numero es  $numero";
+*/
+		echo "El cambio";
 
-		//Numero y variable sin concatenar
-		echo 'C el numero es  $numero';
 
 	?>
 
