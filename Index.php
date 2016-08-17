@@ -9,19 +9,16 @@
 
 	<?php
 
-		//codigo HTML embebido en el PHP
-		echo "<h2> Hola Php </h2>";
+		
+		$random = 0;
+		$impar 	= 0;
+		$par  	= 0;
+		$vector = array(0,0,0,0,0,0,0,0,0,0);
 
-		//declaracion de variables "$"
-		$numero = 10;
-/*
-		//numero y variable concatenado por "."
-		echo "A el numero es" . $numero;
+		echo $vector[1];
 
-		//Numero y variable sin concatenar
-		echo "B el numero es  $numero";
-*/
-		echo "El cambio";
+
+
 
 
 	?>
