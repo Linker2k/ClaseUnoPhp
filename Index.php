@@ -52,7 +52,7 @@
 			case 6: $vector[5]++;
 			break;
 			case 7: 
-				if ($vector[6] <= (5*$vueltas) / 100) {
+				if ($vector[6] >= (5*$vueltas) / 100) {
 					continue;
 				} else {
 				
