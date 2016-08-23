@@ -22,8 +22,7 @@ $lapicerados = array('Color' => 'rojo', 'Marca' => 'Fiber Castel', 'Trazo' => 'G
 
 echo "Lapicera Dos: ";
 
-foreach($lapicerados as $caracteristica => $valor)
-{
+foreach($lapicerados as $caracteristica => $valor){
 
 	echo " - $caracteristica : $valor  , ";
 }
@@ -35,8 +34,7 @@ echo "Lapicera Tres: ";
 
 $lapiceratres = array('Color' => 'negro', 'Marca' => 'Sharpie', 'Trazo' => 'Microfibra', 'Precio' => 22);
 
-foreach($lapiceratres as $caracteristica => $valor)
-{
+foreach($lapiceratres as $caracteristica => $valor){
 
 	echo "- $caracteristica : $valor  , ";
 }
