@@ -8,15 +8,15 @@
 
 require('Rectangulo.php');
 
-$FG = new Rectangulo();
+$FG = new Rectangulo(12,13);
 
 $FG->SetColor('amarillo');
 
 var_dump($FG);
 
-$color =  $FG->GetColor();
+$color =  $FG->toString();
 
-echo "$color";
+
 
 ?>
 
