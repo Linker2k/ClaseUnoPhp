@@ -7,15 +7,43 @@
 <?php
 
 require('Rectangulo.php');
+require('Triangulo.php');
 
-$FG = new Rectangulo(12,13);
 
-$FG->SetColor('amarillo');
+//RECTANGULO
 
-var_dump($FG);
+$Rec = new Rectangulo(12,13);
 
-$color =  $FG->toString();
+$Rec->SetColor('amarillo');
 
+var_dump($Rec);
+
+echo "<br>";
+
+$Rec->toString();
+
+echo "<br>";
+
+$Rec->Dibujar();
+
+
+//TRIANGULO
+
+echo "<br>";
+
+$Tri = new Triangulo(12,13);
+
+$Tri->SetColor('amarillo');
+
+var_dump($Tri);
+
+echo "<br>";
+
+$Tri->toString();
+
+echo "<br>";
+
+$Tri->Dibujar();
 
 
 ?>

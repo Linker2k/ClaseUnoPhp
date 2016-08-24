@@ -1,38 +1,57 @@
 <?php
 
-require('ClasePadre.php');
+require_once('FiguraGeometrica.php');
 
 
 class Rectangulo extends FiguraGeometrica{
 
-	private $_ladoUno;
-	private $_ladoDos;
+	private $_ladoAlto;
+	private $_ladoAncho;
 
-	function __construct($ladouno, $ladodos){
+	function __construct($ladoAlto, $ladoAncho){
 
-		$this->_ladoUno = $ladouno;
-		$this->_ladoDos = $ladodos;
+		$this->_ladoAlto = $ladoAlto;
+		$this->_ladoAncho = $ladoAncho;
 	}
 
 
 	private function CalcularDatos(){
 
-		$this->_perimetro = 2*$this->_ladoUno + 2*$this->_ladoDos;
-	 	$this->_area = $this->_ladoUno * $this->_ladoDos;
+		$this->_perimetro = 2*$this->_ladoAlto + 2*$this->_ladoAncho;
+	 	$this->_area = $this->_ladoAlto * $this->_ladoAncho;
 	}
 
 	function toString(){
 
 		$this->CalcularDatos();
 
-		$string =  "Perimetro:". $this->_perimetro . "Area:" . $this->_area;
+		echo "<br>";
+		echo "Datos del Rectangulo:<br>";
+		echo  "Alto: ". $this->_ladoAlto . " Ancho: " . $this->_ladoAncho . " Perimetro:". $this->_perimetro . " Area:" . $this->_area;
 
-		return $string;
+		return;
 	}
 
 	function Dibujar(){
 
-		return ;
+		$this->CalcularDatos();
+
+		echo "<br>";
+
+		for ($contador2 = 0 ; $contador2 < $this->_ladoAlto; $contador2++){
+
+		for ($contador = 0; $contador < $this->_ladoAncho ; $contador++){
+
+			echo " * ";
+
+		}
+
+
+		echo "<br>";
+
+	}
+		return;
+		
 	}
 
 }
