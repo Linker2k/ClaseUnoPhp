@@ -30,6 +30,7 @@ foreach ($matriz as $caracteristica){
 	}
 
 echo "<br>";
+echo " <br>";
 
 //SEGUNDO METODO DE LECTURA: FOREACH ACCEDIDO POR ATRIBUTO
 
